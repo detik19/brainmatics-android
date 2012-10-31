@@ -11,5 +11,14 @@
     <string name="pick_gallery">Pick Gallery</string>
     <string name="take_picture">Take Picture</string>
     <string name="button1">Kamera</string>
+    <string name="title_activity_gps">GPSActivity</string>
+    <string name="ambil_lokasi">Ambil Lokasi</string>
+    <string name="longitude">Longitude :</string>
+    <string name="lattitude">Lattitude :</string>
+    <string name="gps">GPS</string>
+    
+    <string name="title_activity_google_map">GoogleMap</string>
+    
+    <string name="map">Map</string>
 
 </resources>
