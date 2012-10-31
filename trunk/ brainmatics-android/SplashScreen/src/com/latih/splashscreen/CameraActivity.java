@@ -1,5 +1,6 @@
 package com.latih.splashscreen;
 
+import android.net.Uri;
 import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
@@ -12,6 +13,8 @@ import android.widget.ImageView;
 public class CameraActivity extends Activity {
 
 	final int TAKE_AVATAR_CAMERA_REQUEST=0;
+	final int TAKE_AVATAR_GALLERY_REQUEST=1;
+	ImageView iV;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -20,12 +23,13 @@ public class CameraActivity extends Activity {
         
         Button pickGalleryBtn= (Button) findViewById(R.id.button1);
         Button takePictBtn=(Button) findViewById(R.id.button2);
-        
+		iV= (ImageView)findViewById(R.id.imageView1);
+
         
         pickGalleryBtn.setOnClickListener(new View.OnClickListener() {
 			
 			public void onClick(View v) {
-				
+				ambilGallery();
 			}
 		});
         
@@ -43,9 +47,14 @@ public class CameraActivity extends Activity {
 		// TODO Auto-generated method stub
     	  if (requestCode == TAKE_AVATAR_CAMERA_REQUEST && resultCode == RESULT_OK) {
     			Bitmap cameraPic=(Bitmap) data.getExtras().get("data");
-    			ImageView iV= (ImageView)findViewById(R.id.imageView1);
     			iV.setImageBitmap(cameraPic);
 
+    	  }
+    	  
+    	  else if(requestCode== TAKE_AVATAR_GALLERY_REQUEST && resultCode== RESULT_OK){
+    		  Uri photoUri = data.getData();
+    		  iV.setImageURI(photoUri);
+    		  
     	  }
 		super.onActivityResult(requestCode, resultCode, data);
 	}
@@ -63,5 +72,13 @@ public class CameraActivity extends Activity {
     	
     }
    
+    private void ambilGallery(){
+    	
+    	Intent intent = new Intent(Intent.ACTION_PICK);
+    	intent.setType("image/*");
+    	
+    	startActivityForResult(intent, TAKE_AVATAR_GALLERY_REQUEST);
+    	
+    }
     
 }
