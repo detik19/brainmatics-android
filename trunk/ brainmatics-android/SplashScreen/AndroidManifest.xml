@@ -8,13 +8,14 @@
         android:targetSdkVersion="15" />
 
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-	<uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
-        
         <uses-library android:name="com.google.android.maps" />
+
         <activity android:name=".SplashScreen" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -33,7 +34,15 @@
         <activity
             android:name=".GoogleMap"
             android:label="@string/title_activity_google_map" >
-            
+        </activity>
+        <activity
+            android:name=".ViewListMap"
+            android:label="@string/title_activity_view_list_map" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
     </application>
 
