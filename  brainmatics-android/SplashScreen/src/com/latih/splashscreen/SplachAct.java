@@ -15,7 +15,25 @@ public class SplachAct extends Activity {
         setContentView(R.layout.activity_splach);
         
         Button btnKamera= (Button) findViewById(R.id.button1);
+        Button btnGPS=(Button) findViewById(R.id.buttongps);
+        Button btnmap=(Button) findViewById(R.id.buttonmap);
         
+        btnmap.setOnClickListener(new View.OnClickListener() {
+			
+			public void onClick(View v) {
+				Intent intent=new Intent(getApplicationContext(), GoogleMap.class);
+				startActivity(intent);
+				
+			}
+		});
+        btnGPS.setOnClickListener(new View.OnClickListener() {
+			
+			public void onClick(View v) {
+
+				Intent intent=new Intent(getApplicationContext(),GPSActivity.class);
+				startActivity(intent);
+			}
+		});
         btnKamera.setOnClickListener(new View.OnClickListener() {
 			
 			public void onClick(View v) {
