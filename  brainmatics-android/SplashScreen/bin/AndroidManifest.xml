@@ -38,11 +38,7 @@
         <activity
             android:name=".ViewListMap"
             android:label="@string/title_activity_view_list_map" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+           
         </activity>
         <activity
             android:name=".TwitterActivity"
@@ -51,11 +47,12 @@
         <activity
             android:name=".LoginActivity"
             android:label="@string/title_activity_login" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+           
+        </activity>
+        <activity
+            android:name=".NotifActivity"
+            android:label="@string/title_activity_notif" >
+            
         </activity>
     </application>
 

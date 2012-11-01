@@ -19,7 +19,16 @@ public class SplachAct extends Activity {
         Button btnmap=(Button) findViewById(R.id.buttonmap);
         Button btntwit=(Button) findViewById(R.id.buttontwitter);
         Button btnlogin=(Button) findViewById(R.id.buttonlogin);
+        Button btnnotif=(Button) findViewById(R.id.buttonnotifmanager);
         
+        
+        btnnotif.setOnClickListener(new View.OnClickListener() {
+			
+			public void onClick(View v) {
+				Intent intent=new Intent(getApplicationContext(), NotifActivity.class);
+				startActivity(intent);					
+			}
+		});
         btnlogin.setOnClickListener(new View.OnClickListener() {
 			
 			public void onClick(View v) {
