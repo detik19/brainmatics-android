@@ -21,5 +21,7 @@
     <string name="title_activity_view_list_map">ViewListMap</string>
     <string name="twitter">Twitter</string>
     <string name="title_activity_twitter">TwitterActivity</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="login">Login</string>
 
 </resources>

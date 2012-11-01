@@ -18,6 +18,15 @@ public class SplachAct extends Activity {
         Button btnGPS=(Button) findViewById(R.id.buttongps);
         Button btnmap=(Button) findViewById(R.id.buttonmap);
         Button btntwit=(Button) findViewById(R.id.buttontwitter);
+        Button btnlogin=(Button) findViewById(R.id.buttonlogin);
+        
+        btnlogin.setOnClickListener(new View.OnClickListener() {
+			
+			public void onClick(View v) {
+				Intent intent=new Intent(getApplicationContext(), LoginActivity.class);
+				startActivity(intent);				
+			}
+		});
         
         btntwit.setOnClickListener(new View.OnClickListener() {
 			
