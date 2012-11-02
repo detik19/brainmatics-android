@@ -29,5 +29,7 @@
     <string name="gridview">My Grid View</string>
     <string name="title_activity_web_view">WebViewActivity</string>
     <string name="web_view">My Web View</string>
+    <string name="title_activity_xml">XMLActivity</string>
+    <string name="xml">Parse XML</string>
 
 </resources>

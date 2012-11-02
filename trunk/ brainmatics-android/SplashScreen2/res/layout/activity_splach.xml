@@ -71,10 +71,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/notif" />
-
+
     <Button
         android:id="@+id/buttonlogin"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:drawableTop="@drawable/email"
         android:text="@string/login" />
@@ -94,6 +94,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/web_view" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/xml" />
 
     </LinearLayout>
 
