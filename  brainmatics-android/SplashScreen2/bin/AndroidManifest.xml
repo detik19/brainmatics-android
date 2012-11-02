@@ -56,6 +56,10 @@
         <activity
             android:name=".GridViewActivity"
             android:label="@string/title_activity_grid_view" >
+        </activity>
+        <activity
+            android:name=".WebViewActivity"
+            android:label="@string/title_activity_web_view" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
