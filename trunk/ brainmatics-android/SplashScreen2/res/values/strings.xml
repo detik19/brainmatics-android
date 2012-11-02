@@ -1,0 +1,30 @@
+<resources>
+
+    <string name="app_name">SplashScreen</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_splash_screen">Splash Screen</string>
+    <string name="nama_aplikasi">Nama Aplikasi</string>
+    <string name="title_activity_splach">SplachAct</string>
+    <string name="kolom">2</string>
+    <string name="title_activity_camera">Pick Picture</string>
+    <string name="pick_gallery">Pick Gallery</string>
+    <string name="take_picture">Take Picture</string>
+    <string name="button1">Kamera</string>
+    <string name="title_activity_gps">GPSActivity</string>
+    <string name="ambil_lokasi">Ambil Lokasi</string>
+    <string name="longitude">Longitude :</string>
+    <string name="lattitude">Lattitude :</string>
+    <string name="gps">GPS</string>
+    <string name="title_activity_google_map">GoogleMap</string>
+    <string name="map">Map</string>
+    <string name="title_activity_view_list_map">ViewListMap</string>
+    <string name="twitter">Twitter</string>
+    <string name="title_activity_twitter">TwitterActivity</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="login">Login</string>
+    <string name="title_activity_notif">NotifActivity</string>
+    <string name="notif">Notification</string>
+    <string name="title_activity_grid_view">GridViewActivity</string>
+
+</resources>
