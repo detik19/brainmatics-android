@@ -1,5 +1,7 @@
 package com.latih.splashscreen;
 
+import com.latih.splashscreen.R.id;
+
 import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
@@ -20,7 +22,27 @@ public class SplachAct extends Activity {
         Button btntwit=(Button) findViewById(R.id.buttontwitter);
         Button btnlogin=(Button) findViewById(R.id.buttonlogin);
         Button btnnotif=(Button) findViewById(R.id.buttonnotifmanager);
+        Button btngridview=(Button)findViewById(R.id.buttongridview);
+        Button btnwebview=(Button) findViewById(R.id.button_web_view);
         
+        btnwebview.setOnClickListener(new View.OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				Intent intent=new Intent(getApplicationContext(), WebViewActivity.class);
+				startActivity(intent);		
+			}
+		});
+        btngridview.setOnClickListener(new View.OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				Intent intent=new Intent(getApplicationContext(), GridViewActivity.class);
+				startActivity(intent);				
+				
+			}
+		});
         
         btnnotif.setOnClickListener(new View.OnClickListener() {
 			

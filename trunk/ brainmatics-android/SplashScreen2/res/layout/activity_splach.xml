@@ -65,18 +65,36 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/twitter" />
-
-    <Button
-        android:id="@+id/buttonlogin"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:drawableTop="@drawable/email"
-        android:text="@string/login" />
 
     <Button
         android:id="@+id/buttonnotifmanager"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/notif" />
+
+    <Button
+        android:id="@+id/buttonlogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/email"
+        android:text="@string/login" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/buttongridview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gridview" />
+
+        <Button
+            android:id="@+id/button_web_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/web_view" />
+
+    </LinearLayout>
 
 </LinearLayout>
